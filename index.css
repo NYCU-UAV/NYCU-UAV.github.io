@@ -153,25 +153,50 @@
 }
 
 .row2 {
-    height: 50vh;
-    margin-top: 0;
+    height: 40vh;
     display: flex;
     align-items: center;
 }
 
 .row3 {
-    height: 10vh;
+    height: 20vh;
     margin-top: 0;
 }
 
-#logo_pre,
-#logo {
-    max-height: 60vh;
+.row4 {
+    height: 20vh;
+    margin-top: 0;
 }
 
 #plane_pre {
     max-width: 90%;
     max-height: 100%;
+}
+
+#plane {
+    width: 4vw;
+    margin-left: 48vw;
+    position: absolute;
+    bottom: 5vh;
+}
+
+#plane_intro {
+    font-size: x-large;
+}
+
+table {
+    font-size: large;
+}
+
+thead {
+    background-color: #0F2540;
+    color: white;
+}
+
+
+#logo_pre,
+#logo {
+    max-height: 60vh;
 }
 
 .intro_text {
@@ -216,13 +241,6 @@
     }
 }
 
-#plane {
-    width: 4vw;
-    margin-left: 48vw;
-    position: absolute;
-    bottom: 5vh;
-}
-
 #timeline {
     background-color: #0F2540;
     width: .5vw;
@@ -252,24 +270,20 @@
     position: absolute;
 }
 
-#t2019 {
+#t1+img {
     top: 20vh;
 }
 
-#t2020 {
+#t2+img {
     top: 30vh;
 }
 
-#t2021 {
+#t3+img {
     top: 40vh;
 }
 
-#t2022 {
+#t4+img {
     top: 50vh;
-}
-
-#t2023 {
-    top: 60vh;
 }
 
 #timeline a p {
@@ -279,22 +293,174 @@
     font-size: large;
 }
 
-#y2019 {
+#t1 {
     top: 20vh;
 }
 
-#y2020 {
+#t2 {
     top: 30vh;
 }
 
-#y2021 {
+#t3 {
     top: 40vh;
 }
 
-#y2022 {
+#t4 {
     top: 50vh;
 }
 
-#y2023 {
-    top: 60vh;
+
+.log .fp-prev {
+    position: absolute;
+    top: 95vh;
+    left: 48vw;
+    border-width: 3vh 3vh 3vh 0;
+}
+
+.log .fp-next {
+    position: absolute;
+    top: 95vh;
+    right: 48vw;
+    border-width: 3vh 0 3vh 3vh;
+}
+
+.log .title {
+    position: relative;
+    top: 20vh;
+    font-size: x-large;
+}
+
+.log .page {
+    position: relative;
+    bottom: 10vh;
+    font-size: x-large;
+}
+
+.gallery .row {
+    height: 25vh;
+    margin-top: 3vh;
+}
+
+.gallery .row:first-child {
+    margin-top: 15vh;
+}
+
+.gallery .col-2 {
+    background-color: #0F2540;
+    width: 18vw;
+    height: 25vh;
+    color: white;
+    font-size: large;
+}
+
+.gallery .col-2 p {
+    height: 15vh;
+}
+
+.gallery .col-2 hr {
+    visibility: hidden;
+}
+
+
+.gallery .col-2:hover hr:first-child,
+.gallery .col-2:hover p {
+    transform: translateY(3vh);
+    visibility: visible;
+    transition: transform 2s;
+}
+
+.gallery .col-2:hover hr:last-child {
+    transform: translateY(-3vh);
+    visibility: visible;
+    transition: transform 2s;
+}
+
+.info {
+    opacity: 0;
+}
+
+.info .row {
+    margin: 0;
+    height: 50vh;
+}
+
+.info img {
+    width: 100%;
+}
+
+#slogan {
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+#link {
+    margin: 5vh 0;
+}
+
+#link a {
+    color: black;
+    font-size: x-large;
+    text-decoration: none;
+}
+
+#link img {
+    height: 10vh;
+    width: 10vh;
+    margin-right: 3vh;
+}
+
+#address img {
+    height: 15vh;
+    width: 15vh;
+    margin-right: 3vh;
+    transform: rotate(45deg);
+}
+
+#address a {
+    color: white;
+    font-size: xx-large;
+    text-decoration: none;
+}
+
+#award_title {
+    font-size: xx-large;
+    font-weight: bold;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+
+#award {
+    font-size: x-large;
+    margin-left: 20vw;
+}
+
+#award span {
+    color: #0F2540;
+    font-size: x-large;
+    font-weight: bold;
+}
+
+#award img {
+    height: 7vh;
+    width: 7vh;
+}
+
+#to_be_continued {
+    color: #0F2540;
+    font-size: x-large;
+    font-weight: bold;
+    margin-top: 5vh;
+}
+
+#award_marquee img {
+    height: 10vh;
+    width: 10vh;
+    transform: rotate(90deg);
+}
+
+#test {
+    background-color: yellow;
+    opacity: 0.8;
+    font-size: large;
+    color: red;
 }
