@@ -9,7 +9,13 @@ const page_anchors = [['team_intro-1', 'team_intro-2'],
 
 const page_hashtag = ['enter_page', 'home_page', 'team_intro', 'project', 'UAV_log', 'activities', 'awards', 'support_us'];
 
-const page_num = page_hashtag.indexOf(window.location.href.includes('#') ? window.location.href.split('#')[1].split('/')[0].split('-')[0] : 'enter_page');
+if (!window.location.href.includes('#')) {
+    window.location.replace('#enter_page');
+}
+
+const page_num = page_hashtag.indexOf(window.location.href.split('#')[1].split('/')[0].split('-')[0]);
+
+
 
 $(document).ready(function () {
     for (i = page_anchors[page_num].length - 1; i >= 0; i--) {
