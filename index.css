@@ -346,7 +346,7 @@ thead {
 }
 
 .gallery .col-2 {
-    background-color: #0B346E;
+    background-color: white;
     width: 18vw;
     height: 25vh;
     color: white;
@@ -355,10 +355,16 @@ thead {
 
 .gallery .col-2 p {
     height: 15vh;
+    opacity: 1;
 }
 
-.gallery .col-2 hr {
+.gallery .col-2 hr,
+.gallery .col-2 p {
     visibility: hidden;
+}
+
+.gallery .col-2:hover {
+    box-shadow: inset 18vw 25vh rgb(0, 0, 0, 0.6);
 }
 
 
@@ -479,11 +485,4 @@ thead {
 .award_img {
     height: 80vh;
     width: 56vh;
-}
-
-#test {
-    background-color: yellow;
-    opacity: 0.8;
-    font-size: large;
-    color: red;
 }

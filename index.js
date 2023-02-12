@@ -24,6 +24,8 @@ $(document).ready(function () {
             $('#' + i).addClass('log');
         } else if (page_hashtag[page_num] == 'activities') {
             $('#' + i).addClass('gallery');
+        } else if (page_hashtag[page_num] == 'awards') {
+            $('#coll_img').load('award_img.html');
         }
         $('#' + i).load(page_anchors[page_num][i] + '.html');
     }
@@ -229,6 +231,7 @@ $(window).on('hashchange', function () {
     new_page = window.location.href.split('#')[1].split('/')[0];
     if (!(['enter_page', 'home_page', ...page_anchors[page_num], 'support_us'].includes(new_page))) {
         location.reload();
+    } else {
+        main();
     }
-    main();
 });
