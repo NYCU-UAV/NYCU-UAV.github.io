@@ -181,7 +181,7 @@ function nav(page) {
 function timeline(num) {
     $('#timeline').css({
         transform: 'translateY(0)',
-        transition: 'transform 3s'
+        transition: 'transform 2s'
     });
 
     $('#timeline a img[src="./img/timeline_dot_active.png"]').attr('src', './img/timeline_dot.png');

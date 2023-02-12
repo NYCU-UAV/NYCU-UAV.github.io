@@ -434,7 +434,7 @@ thead {
     margin-left: 20vw;
 }
 
-#award span {
+#award #ranking {
     color: #0B346E;
     font-size: x-large;
     font-weight: bold;
@@ -456,6 +456,29 @@ thead {
     height: 10vh;
     width: 10vh;
     transform: rotate(90deg);
+}
+
+.modal-dialog {
+    display: flex;
+    justify-content: center;
+}
+
+#tooltip {
+    visibility: hidden;
+    background-color: #0B346E;
+    color: white;
+    padding: 0 1%;
+    border-radius: 30% 0;
+    margin-left: 1%;
+}
+
+#award:hover>#tooltip {
+    visibility: visible;
+}
+
+.award_img {
+    height: 80vh;
+    width: 56vh;
 }
 
 #test {
