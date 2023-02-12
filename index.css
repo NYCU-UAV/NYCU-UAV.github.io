@@ -70,7 +70,7 @@
     height: 100vh;
     position: absolute;
     top: 0;
-    background: linear-gradient(white, #0F2540);
+    background: linear-gradient(white, #0B346E);
     transform: translateY(100vh);
     opacity: 0;
 }
@@ -130,7 +130,7 @@
 }
 
 #gradient nav .act a span {
-    color: #0F2540;
+    color: #0B346E;
     font-weight: bold;
 }
 
@@ -189,7 +189,7 @@ table {
 }
 
 thead {
-    background-color: #0F2540;
+    background-color: #0B346E;
     color: white;
 }
 
@@ -242,7 +242,7 @@ thead {
 }
 
 #timeline {
-    background-color: #0F2540;
+    background-color: #0B346E;
     width: .5vw;
     height: 90vh;
     position: absolute;
@@ -289,7 +289,7 @@ thead {
 #timeline a p {
     position: absolute;
     left: -7vw;
-    color: #0F2540;
+    color: #0B346E;
     font-size: large;
 }
 
@@ -346,7 +346,7 @@ thead {
 }
 
 .gallery .col-2 {
-    background-color: #0F2540;
+    background-color: #0B346E;
     width: 18vw;
     height: 25vh;
     color: white;
@@ -435,7 +435,7 @@ thead {
 }
 
 #award span {
-    color: #0F2540;
+    color: #0B346E;
     font-size: x-large;
     font-weight: bold;
 }
@@ -446,7 +446,7 @@ thead {
 }
 
 #to_be_continued {
-    color: #0F2540;
+    color: #0B346E;
     font-size: x-large;
     font-weight: bold;
     margin-top: 5vh;
