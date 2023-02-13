@@ -38,7 +38,7 @@ $(document).ready(function () {
         menu: '#gradient'
     });
     if (page_anchors[page_num].includes(window.location.href.split('#')[1].split('/')[0])) {
-        fullpage_api.silentMoveTo(3);
+        fullpage_api.silentMoveTo(page_anchors[page_num].indexOf(window.location.href.split('#')[1].split('/')[0]) + 3);
         pg3_silent();
     }
     self.setInterval(function () {

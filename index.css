@@ -334,6 +334,11 @@ thead {
     position: relative;
     bottom: 10vh;
     font-size: x-large;
+    width: min-content;
+}
+
+.log #media {
+    margin-top: 5%;
 }
 
 .gallery .row {
