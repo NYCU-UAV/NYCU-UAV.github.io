@@ -1,0 +1,16 @@
+<img src="./img/timeline_arrow.svg" id="timeline_arrow" />
+
+<script>
+    const TIME = ['2019', '2022', '2022<br>夏', '2022<br>秋'];
+
+    for (i = 1; i <= TIME.length; i++) {
+        $('#timeline_arrow').before('<a href="#project-' + i + '"><p id="t' + i + '">' + TIME[i - 1] + '</p><img src="./img/timeline_dot.png"/></a>');
+        t = 20 + (i - 1) * (40 / (TIME.length - 1));
+        $('#t' + i).css({
+            top: t + 'vh',
+        });
+        $('#t' + i + '+img').css({
+            top: t + 'vh',
+        });
+    }
+</script>

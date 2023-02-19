@@ -1,0 +1,57 @@
+.gallery .row {
+    height: 25vh;
+    margin-top: 3vh;
+}
+
+.gallery .row:first-child {
+    margin-top: 15vh;
+}
+
+.gallery .col-2 {
+    background-color: white;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    width: 18vw;
+    height: 25vh;
+    color: white;
+    font-size: large;
+}
+
+.gallery .col-2 p {
+    height: 15vh;
+    opacity: 1;
+}
+
+.gallery .col-2 hr,
+.gallery .col-2 p {
+    visibility: hidden;
+}
+
+.gallery .col-2:hover {
+    box-shadow: inset 18vw 25vh rgb(0, 0, 0, 0.6);
+}
+
+.gallery .col-2:hover hr:first-child,
+.gallery .col-2:hover p {
+    transform: translateY(3vh);
+    visibility: visible;
+    transition: transform 2s;
+}
+
+.gallery .col-2:hover hr:last-child {
+    transform: translateY(-3vh);
+    visibility: visible;
+    transition: transform 2s;
+}
+
+.modal .row {
+    height: 40vh;
+    margin-top: 0;
+}
+
+.modal .row .col-md-auto img {
+    max-width: 100%;
+    max-height: 37.5vh;
+}

@@ -1,0 +1,27 @@
+.project .row:first-child {
+    height: 40vh;
+    margin-top: 15vh;
+}
+
+.project .row {
+    height: 20vh;
+    margin-top: 0;
+}
+
+.plane_img {
+    max-width: 90%;
+    max-height: 100%;
+}
+
+#plane_intro {
+    font-size: x-large;
+}
+
+table {
+    font-size: large;
+}
+
+thead {
+    background-color: #0B346E;
+    color: white;
+}

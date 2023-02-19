@@ -1,0 +1,208 @@
+/*fullpage elements*/
+
+.fp-watermark {
+    visibility: hidden;
+}
+
+/*loading page*/
+
+#loading {
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+}
+
+#loading img {
+    width: 40vw;
+}
+
+#loading marquee h1 {
+    color: #0B346E;
+    font-weight: bold;
+}
+
+/*enter page*/
+
+#enter .fp-slidesNav {
+    display: flex;
+    justify-content: center;
+}
+
+#enter .fp-slidesNav ul li a span {
+    background: white;
+}
+
+#enter .fp-prev {
+    border-color: transparent black transparent transparent;
+}
+
+#enter .fp-next {
+    border-color: transparent transparent transparent black;
+}
+
+#enter .slide {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+.logo_small {
+    width: 10vw;
+    margin-left: 45vw;
+    position: absolute;
+    bottom: 20vh;
+    animation-name: rotating;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes rotating {
+    0% {
+        transform: rotate(2deg);
+    }
+
+    50% {
+        transform: rotate(-2deg);
+    }
+
+    100% {
+        transform: rotate(2deg);
+    }
+}
+
+/*home page*/
+
+#home #text {
+    width: 100vw;
+    color: white;
+    position: absolute;
+    bottom: 0;
+    opacity: 0;
+}
+
+#home #text #title {
+    font-size: 8vh;
+}
+
+#home #text #hint {
+    font-size: 5vh;
+}
+
+/*gradient*/
+
+#gradient {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    background: linear-gradient(white, #0B346E);
+}
+
+#gradient nav {
+    padding: 0;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#gradient nav p a {
+    position: relative;
+}
+
+.nav_bg {
+    height: 10vh;
+    margin: 0 3vh;
+}
+
+.nav_bg+span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+    font-size: x-large;
+    white-space: nowrap;
+    text-decoration: none;
+}
+
+#gradient nav .act a span {
+    color: #0B346E;
+    font-weight: bold;
+}
+
+#logo_circle {
+    /*width: 25vw;
+    margin: 5vh 37.5vw;
+    padding: 0;*/
+}
+
+#name {
+    margin-right: auto;
+}
+
+#name a {
+    color: white;
+    font-size: x-large;
+    white-space: nowrap;
+    text-decoration: none;
+}
+
+/*all section*/
+.row {
+    height: 75vh;
+    margin-top: 15vh;
+    display: flex;
+    align-items: center;
+}
+
+
+/*infomation*/
+
+#info {
+    opacity: 0;
+}
+
+#info .row {
+    margin: 0;
+    height: 50vh;
+}
+
+#info #logo {
+    width: 100%;
+}
+
+#slogan {
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+.link {
+    margin: 5vh 0;
+}
+
+.link a {
+    color: black;
+    font-size: x-large;
+    text-decoration: none;
+}
+
+.conn_ico {
+    height: 10vh;
+    width: 10vh;
+    margin-right: 3vh;
+}
+
+#address img {
+    height: 15vh;
+    width: 15vh;
+    margin-right: 3vh;
+    transform: rotate(45deg);
+}
+
+#address a {
+    color: white;
+    font-size: xx-large;
+    text-decoration: none;
+}

@@ -1,0 +1,50 @@
+.logo {
+    max-height: 60vh;
+}
+
+.intro_text {
+    font-size: large;
+    font-weight: bold;
+}
+
+#arrow_down,
+#arrow_up {
+    width: 4vw;
+    margin-left: 48vw;
+    position: absolute;
+    animation-name: jump;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+}
+
+#arrow_down {
+    bottom: 5vh;
+}
+
+#arrow_up {
+    top: 20vh;
+}
+
+@keyframes jump {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    50% {
+        transform: scale(1.1);
+        opacity: 0.8;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+#plane {
+    width: 4vw;
+    margin-left: 48vw;
+    position: absolute;
+    bottom: 5vh;
+}

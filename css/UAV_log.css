@@ -1,0 +1,42 @@
+.log .fp-slidesNav ul li a span {
+    visibility: hidden;
+}
+
+.log .fp-prev {
+    border-color: transparent black transparent transparent;
+}
+
+.log .fp-next {
+    border-color: transparent transparent transparent black;
+}
+
+.log .fp-prev {
+    position: absolute;
+    top: 95vh;
+    left: 48vw;
+    border-width: 3vh 3vh 3vh 0;
+}
+
+.log .fp-next {
+    position: absolute;
+    top: 95vh;
+    right: 48vw;
+    border-width: 3vh 0 3vh 3vh;
+}
+
+.log #title {
+    position: relative;
+    top: 20vh;
+    font-size: x-large;
+}
+
+.log #page {
+    position: relative;
+    bottom: 10vh;
+    font-size: x-large;
+    width: min-content;
+}
+
+.log #media {
+    margin-top: 5%;
+}

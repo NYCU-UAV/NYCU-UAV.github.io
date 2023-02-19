@@ -1,24 +1,9 @@
-<div class="modal fade" id="Modal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <img src="./img/award-1.jpg" class="award_img">
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-    </div>
-</div>
-<div class="modal fade" id="Modal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <img src="./img/award-2.jpg" class="award_img">
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-    </div>
-</div>
-<div class="modal fade" id="Modal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <img src="./img/award-3.jpg" class="award_img">
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-    </div>
-</div>
-<div class="modal fade" id="Modal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <img src="./img/award-4.jpg" class="award_img">
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-    </div>
-</div>
+<div id="award_modal"></div>
+
+<script>
+    $(window).on('load', function () {
+        for (i = 1; i <= $('.award').length; i++) {
+            $('#award_modal').append('<div class="modal fade" id="Modal' + i + '" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"><div class= "modal-dialog" ><img src="./img/award-' + i + '.jpg" class="award_img"><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button></div></div>');
+        }
+    });
+</script>

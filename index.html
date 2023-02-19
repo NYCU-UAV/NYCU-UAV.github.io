@@ -23,65 +23,90 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.15/fullpage.css"
         integrity="sha512-joJLRX4chQYCQlk0R4FXEgZHqsWA1hf4e+C+QKyi8fnfDm8FlEsNAVo+ByQhD19BrgVZGSOJKAQZa5M5gXDtpQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/team_intro.css">
+    <link rel="stylesheet" href="./css/timeline.css">
+    <link rel="stylesheet" href="./css/project.css">
+    <link rel="stylesheet" href="./css/UAV_log.css">
+    <link rel="stylesheet" href="./css/activities.css">
+    <link rel="stylesheet" href="./css/award.css">
     <link rel="icon" href="./img/icon.ico" type="image/x-icon">
     <title>NYCU UAV</title>
 </head>
 
 <body>
-    <div id="timeline" class="fixed-top">
-        <img src="./img/timeline_arrow.svg" id="timeline_arrow" />
-        <a href="#project-1">
-            <p id="t1">2019</p><img src="./img/timeline_dot.png" />
-        </a>
-        <a href="#project-2">
-            <p id="t2">2020</p><img src="./img/timeline_dot.png" />
-        </a>
-        <a href="#project-3">
-            <p id="t3">2022<br>夏</p><img src="./img/timeline_dot.png" />
-        </a>
-        <a href="#project-4">
-            <p id="t4">2022<br>秋</p><img src="./img/timeline_dot.png" />
-        </a>
-    </div>
+    <div id="timeline" class="fixed-top"></div>
     <div id="gradient">
         <nav>
             <p data-menuanchor="home_page"><a href="#home_page"><img src="./img/logo_circle.png" id="logo_circle" /></a>
             </p>
             <p id="name"><a href="#home_page">NYCU UAV</a></p>
-            <p data-menuanchor="team_intro-1"><a href="#team_intro-1"><img src="./img/nav.png"
-                        id="nav_bg"><span>團隊介紹</span></a></p>
-            <p data-menuanchor="project-1"><a href="#project-1"><img src="./img/nav.png"
-                        id="nav_bg"><span>各屆作品</span></a></p>
-            <p data-menuanchor="UAV_log"><a href="#UAV_log"><img src="./img/nav.png" id="nav_bg"><span>UAV
-                        log</span></a></p>
-            <p data-menuanchor="activities"><a href="#activities"><img src="./img/nav.png"
-                        id="nav_bg"><span>過去活動</span></a></p>
-            <p data-menuanchor="awards"><a href="#awards"><img src="./img/nav.png" id="nav_bg"><span>獲得獎項</span></a></p>
+            <p data-menuanchor="team_intro-1">
+                <a href="#team_intro-1">
+                    <img src="./img/nav.png" class="nav_bg"><span>團隊介紹</span>
+                </a>
+            </p>
+            <p data-menuanchor="project-1">
+                <a href="#project-1">
+                    <img src="./img/nav.png" class="nav_bg"><span>各屆作品</span>
+                </a>
+            </p>
+            <p data-menuanchor="UAV_log">
+                <a href="#UAV_log">
+                    <img src="./img/nav.png" class="nav_bg"><span>UAV
+                        log</span>
+                </a>
+            </p>
+            <p data-menuanchor="activities">
+                <a href="#activities">
+                    <img src="./img/nav.png" class="nav_bg"><span>過去活動</span>
+                </a>
+            </p>
+            <p data-menuanchor="awards">
+                <a href="#awards">
+                    <img src="./img/nav.png" class="nav_bg"><span>獲得獎項</span>
+                </a>
+            </p>
         </nav>
-        <div class="info">
-        </div>
+        <div id="info"></div>
+    </div>
+    <div id="loading" class="fixed-top text-center">
+        <img src="./img/logo_no_bg.png" />
+        <marquee direction="right" scrollamount="20">
+            <h1>Loading......</h1>
+        </marquee>
     </div>
     <div id="fullpage">
-        <div class="section">
-            <div class="slide" id="img1"><a href="#home_page"><img src="./img/logo_pre.png"
-                        class="logo_pre_small" /></a>
+        <div class="section" id="enter">
+            <div class="slide" style="background-image: url(./img/1.jpg);"><a href="#home_page"><img
+                        src="./img/logo_pre.png" class="logo_small" /></a>
             </div>
-            <div class="slide" id="img2"><a href="#home_page"><img src="./img/logo_pre.png"
-                        class="logo_pre_small" /></a>
+            <div class="slide" style="background-image: url(./img/2.jpg);"><a href="#home_page"><img
+                        src="./img/logo_pre.png" class="logo_small" /></a>
             </div>
-            <div class="slide" id="img3"><a href="#home_page"><img src="./img/logo_circle.png" class="logo_small" /></a>
+            <div class="slide" style="background-image: url(./img/3.jpg);"><a href="#home_page"><img
+                        src="./img/logo_circle.png" class="logo_small" /></a>
             </div>
         </div>
         <div class="section" id="home">
             <div id="text" class="text-center fixed-bottom">
-                <p id="b">NYCU UAV<br>~一起懷抱對天空的熱情~</p>
-                <p id="s">click to continue…</p>
+                <p id="title">NYCU UAV<br>~一起懷抱對天空的熱情~</p>
+                <p id="hint">click to continue…</p>
             </div>
         </div>
         <div class="section" id="support"></div>
     </div>
     <div id="coll_img"></div>
+    <script>
+        self.setInterval(function () {
+            if (window.location.href.split('#')[1].split('/')[0] == 'enter_page') {
+                fullpage_api.moveSlideRight();
+            }
+        }, 9000);
+        $('#home').click(function () {
+            fullpage_api.moveSectionDown();
+        });
+    </script>
     <script src="./index.js"></script>
 </body>
 

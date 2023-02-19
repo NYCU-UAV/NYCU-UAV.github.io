@@ -1,0 +1,58 @@
+#award_title {
+    font-size: xx-large;
+    font-weight: bold;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+
+.award {
+    font-size: x-large;
+    margin-left: 20vw;
+}
+
+.award #ranking {
+    color: #0B346E;
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.award img {
+    height: 7vh;
+    width: 7vh;
+}
+
+#tooltip {
+    visibility: hidden;
+    background-color: #0B346E;
+    color: white;
+    padding: 0 1%;
+    border-radius: 30% 0;
+    margin-left: 1%;
+}
+
+.award:hover>#tooltip {
+    visibility: visible;
+}
+
+#to_be_continued {
+    color: #0B346E;
+    font-size: x-large;
+    font-weight: bold;
+    margin-top: 5vh;
+}
+
+#award_marquee img {
+    height: 10vh;
+    width: 10vh;
+    transform: rotate(90deg);
+}
+
+.modal-dialog {
+    display: flex;
+    justify-content: center;
+}
+
+.award_img {
+    height: 80vh;
+    width: 56vh;
+}
