@@ -16,4 +16,5 @@
     for (i = 1; i <= AWARD.length; i++) {
         $('#to_be_continued').before('<div class="award" data-bs-toggle="modal" data-bs-target="#Modal' + i + '"><img src="./img/award_icon.svg">' + AWARD[i - 1][0] + '<span id="ranking">' + AWARD[i - 1][1] + '</span ><span id="tooltip"><i class="fa-solid fa-arrow-pointer"></i>Tap Me</span></div>');
     }
+    $('#coll_img').load('award_img.html');
 </script>

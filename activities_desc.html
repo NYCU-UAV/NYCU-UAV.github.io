@@ -18,6 +18,7 @@
         '介紹文字......',
         '介紹文字......'
     ];
+
     for (k = 1; k <= 15; k++) {
         $('#activities_modal').append('<div class="modal fade" id="Modal' + k + '" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"><div class="modal-dialog modal-xl modal-dialog-centered"><div class= "modal-content" ><div class="modal-header"><p class="modal-title">' + $('#act_title-' + k).html() + '</p><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button></div><div class="modal-body"><div class="container-fluid"><div class="row"><div class="col-md-auto"><img src="./img/gallery-' + k + '.jpg"/></div><div class="col-md-auto">' + TEXT[k - 1] + '</div></div></div></div></div></div></div>');
     }
