@@ -1,9 +1,7 @@
 <div id="award_modal"></div>
 
 <script>
-    $(window).on('load', function () {
-        for (i = 1; i <= $('.award').length; i++) {
-            $('#award_modal').append('<div class="modal fade" id="Modal' + i + '" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"><div class= "modal-dialog" ><img src="./img/award-' + i + '.jpg" class="award_img"><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button></div></div>');
-        }
-    });
+    for (i = 1; i <= $('.award').length; i++) {
+        $('#award_modal').append('<div class="modal fade" id="Modal' + i + '" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"><div class= "modal-dialog" ><img src="./img/award-' + i + '.jpg" class="award_img"><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button></div></div>');
+    }
 </script>

@@ -167,9 +167,6 @@ $(document).ready(function () {
             $('#' + i).addClass('log');
         } else if (page_hashtag[page_num] == 'activities') {
             $('#' + i).addClass('gallery');
-            $('#coll_img').load('activities_desc.html');
-        } else if (page_hashtag[page_num] == 'awards') {
-            $('#coll_img').load('award_img.html');
         }
         $('#' + i).load(page_anchors[page_num][i] + '.html');
     }
@@ -189,10 +186,15 @@ $(document).ready(function () {
     }
 });
 
-$(window).on('load', function () {
+window.onload = function () {
+    if (page_hashtag[page_num] == 'activities') {
+        $('#coll_img').load('activities_desc.html');
+    } else if (page_hashtag[page_num] == 'awards') {
+        $('#coll_img').load('award_img.html');
+    }
     $('#loading').css('visibility', 'hidden');
     main();
-});
+};
 
 $(window).on('hashchange', function () {
     new_page = window.location.href.split('#')[1].split('/')[0];
